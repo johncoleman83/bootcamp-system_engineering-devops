@@ -1,7 +1,7 @@
 # Holberton School Projects Repository
 
 ## Description
-This Repo has my (David John Coleman II) projects for Holberton School.
+This Repo has some of my (David John Coleman II) projects for Holberton School.
 
 ## URL
 
