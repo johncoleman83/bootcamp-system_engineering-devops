@@ -1,0 +1,2 @@
+#!/bin/bash
+cut -c 1 An\ Acrostic | tr '\n' ':' | rev | cut -f 2- -d ':' | rev | tr -d ':'
