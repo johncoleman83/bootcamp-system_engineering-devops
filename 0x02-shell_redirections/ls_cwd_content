@@ -1,0 +1,35 @@
+total 132
+drwxrwxr-x 2 vagrant vagrant 4096 Feb  4 13:53 .
+drwxrwxr-x 6 vagrant vagrant 4096 Feb  3 20:10 ..
+-rwxrw-r-- 1 vagrant vagrant   36 Feb  3 18:25 0-hello_world
+-rwxrw-r-- 1 vagrant vagrant   52 Feb  4 03:17 100-empty_casks
+-rw-rw-r-- 1 vagrant vagrant   81 Feb  4 04:08 101-gifs
+-rw-rw-r-- 1 vagrant vagrant   54 Feb  4 03:28 101-gifs~
+-rwxrw-r-- 1 vagrant vagrant   48 Feb  3 21:24 10-no_more_js
+-rwxrw-r-- 1 vagrant vagrant   36 Feb  3 21:39 11-directories
+-rwxrw-r-- 1 vagrant vagrant   25 Feb  3 21:43 12-newest_files
+-rwxrw-r-- 1 vagrant vagrant   27 Feb  3 22:43 13-unique
+-rwxrw-r-- 1 vagrant vagrant   39 Feb  3 22:47 14-findthatword
+-rwxrw-r-- 1 vagrant vagrant   38 Feb  3 22:48 15-countthatword
+-rwxrw-r-- 1 vagrant vagrant   41 Feb  3 23:08 16-whatsnext
+-rwxrw-r-- 1 vagrant vagrant   38 Feb  3 23:13 17-hidethisword
+-rwxrw-r-- 1 vagrant vagrant   54 Feb  3 23:33 18-letteronly
+-rwxrw-r-- 1 vagrant vagrant   36 Feb  4 01:16 19-AZ
+-rwxrw-r-- 1 vagrant vagrant   31 Feb  3 18:48 1-confused_smiley
+-rwxrw-r-- 1 vagrant vagrant   23 Feb  4 01:26 20-hiago
+-rwxrw-r-- 1 vagrant vagrant   16 Feb  4 01:28 21-reverse
+-rwxrw-r-- 1 vagrant vagrant   51 Feb  4 02:07 22-users_and_homes
+-rwxrw-r-- 1 vagrant vagrant   28 Feb  3 18:50 2-hellofile
+-rwxrw-r-- 1 vagrant vagrant   39 Feb  3 18:56 3-twofiles
+-rwxrw-r-- 1 vagrant vagrant   29 Feb  3 20:46 4-lastlines
+-rwxrw-r-- 1 vagrant vagrant   29 Feb  3 20:44 5-firstlines
+-rwxrw-r-- 1 vagrant vagrant   40 Feb  4 13:37 6-third_line
+-rwxrw-r-- 1 vagrant vagrant   86 Feb  3 20:19 7-file
+-rwxrw-r-- 1 vagrant vagrant   36 Feb  4 13:53 8-cwd_state
+-rwxrw-r-- 1 vagrant vagrant   35 Feb  3 21:07 9-duplicate_last_line
+-rw-rw-r-- 1 vagrant vagrant   17 Feb  4 13:50 \*\'"Holberton School"\'\*$\?\*\*\*\*\*:)
+-rw-rw-r-- 1 vagrant vagrant  102 Feb  4 13:37 iacta
+-rw-rw-r-- 1 vagrant vagrant  102 Feb  4 13:36 iacta~
+-rw-rw-r-- 1 vagrant vagrant  167 Feb  3 22:24 list
+-rw-rw-r-- 1 vagrant vagrant    0 Feb  4 13:53 ls_cwd_content
+-rw-rw-r-- 1 vagrant vagrant  301 Feb  4 01:17 README.md
