@@ -1,2 +1,2 @@
 #!/bin/bash
-printf "$(($belnort#$(($water#$WATER + $stir#$STIR))))\n"
+echo $(($belnort#$(($water#$WATER + $stir#$STIR))))
