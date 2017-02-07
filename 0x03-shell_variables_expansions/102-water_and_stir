@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "obase=$belnort $(($water$WATER + $stir$STIR))" | bc
+printf $(($belnort#$(($water$WATER + $stir$STIR))))
