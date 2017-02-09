@@ -7,7 +7,7 @@ The focus of these projects have been learning Bash scripts and commands for uni
 
 ## URL
 
-https://github.com/johncoleman83/holbertonschool-sysadmin_devops/0x03-shell_variables_expansions
+https://github.com/johncoleman83/holbertonschool-sysadmin_devops/
 
 ## Author
 

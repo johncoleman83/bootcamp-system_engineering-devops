@@ -2,8 +2,9 @@
 
 ## Description
 
-This Repo has some of my (David John Coleman II) projects for week 0 at Holberton School.
-The focus of these projects have been learning Bash scripts and commands for unix shell and ubuntu 14.04.
+This Repo has some of my (David John Coleman II) projects for Holberton School. 
+The focus of these projects have been learning Bash scripts and commands for
+unix shell and ubuntu 14.04.
 
 ## URL
 

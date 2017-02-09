@@ -2,12 +2,13 @@
 
 ## Description
 
-This Repo has my (David John Coleman II) projects for Day 2 at Holberton School.
-The focus of these projects have been learning Bash scripts and commands for unix shell and ubuntu 14.04.
+This Repo has my (David John Coleman II) projects for Day 2 at Holberton School.  
+The focus of these projects have been learning Bash scripts and commands for
+unix shell and ubuntu 14.04.
 
 ## URL
 
-https://github.com/johncoleman83/holbertonschool-sysadmin_devops/0x01-shell_permissions
+https://github.com/johncoleman83/holbertonschool-sysadmin_devops/
 
 ## Author
 
