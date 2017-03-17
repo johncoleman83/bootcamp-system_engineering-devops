@@ -16,9 +16,9 @@ The focus of these projects have been learning Bash scripts and commands for ubu
 ## Primary commands / functions used
 
 * ``cd``, ``pwd``, ``ls``, ``cd -``
-*``less``, ``file``, ``ln``
-*``cp``, ``mv``, ``rm``, ``mkdir``
-*``type``, ``which``, ``help``, ``man``
+* ``less``, ``file``, ``ln``
+* ``cp``, ``mv``, ``rm``, ``mkdir``
+* ``type``, ``which``, ``help``, ``man``
 
 ## URL
 

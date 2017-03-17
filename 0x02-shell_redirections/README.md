@@ -17,7 +17,7 @@ http://mywiki.wooledge.org/BashGuide/SpecialCharacters
 remove sections of a file
 
 ## Primary commands / functions used
-*``head``, ``tail``, ``find``, ``wc``, ``sort``, ``uniq``, ``grep``, ``tr``
+* ``head``, ``tail``, ``find``, ``wc``, ``sort``, ``uniq``, ``grep``, ``tr``
 
 ## URL
 
