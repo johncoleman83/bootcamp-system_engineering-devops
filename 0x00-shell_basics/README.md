@@ -2,9 +2,23 @@
 
 ## Description
 
-This Repo has my (David John Coleman II) projects for 01x00 of Holberton School.  
-The focus of these projects have been learning Bash scripts and commands for
-unix shell and ubuntu 14.04.
+This Repo has some of my (David John Coleman II) projects for Holberton School.
+The focus of these projects have been learning Bash scripts and commands for ubuntu 14.04 on Linux
+
+## Primary Concepts Learned
+
+* what is the shell?
+* difference between shell and terminal?
+* types of directories, root user
+* navigation, manipulating files, moving around
+* reading man pages
+
+## Primary commands / functions used
+
+* ``cd``, ``pwd``, ``ls``, ``cd -``
+*``less``, ``file``, ``ln``
+*``cp``, ``mv``, ``rm``, ``mkdir``
+*``type``, ``which``, ``help``, ``man``
 
 ## URL
 
@@ -16,4 +30,4 @@ David John Coleman II.	Check out my website http://www.davidjohncoleman.com/
 
 ## License
 
-WTFPL License - http://www.wtfpl.net/
+Public Domain, no copyright protection

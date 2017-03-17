@@ -2,9 +2,18 @@
 
 ## Description
 
-This Repo has my (David John Coleman II) projects for Day 2 at Holberton School.  
-The focus of these projects have been learning Bash scripts and commands for
-unix shell and ubuntu 14.04.
+This Repo has some of my (David John Coleman II) projects for Holberton School.
+The focus of these projects have been learning Bash scripts and commands for ubuntu 14.04 on Linux
+
+## Primary Concepts Learned
+  * linux file permissions
+  * represent three sets of permissions for owner, group and other
+  * change permissions
+  * run commands as root with ``sudo``
+  * change user id, create user, creat group
+
+## Primary commands / functions used
+*``chmod``, ``sudo``, ``su``, ``chown``, ``chgrp``
 
 ## URL
 
@@ -16,4 +25,4 @@ David John Coleman II.	Check out my website http://www.davidjohncoleman.com/
 
 ## License
 
-WTFPL License - http://www.wtfpl.net/
+Public Domain, no copyright protection

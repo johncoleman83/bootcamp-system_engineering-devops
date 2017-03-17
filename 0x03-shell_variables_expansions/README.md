@@ -2,8 +2,24 @@
 
 ## Description
 
-This Repo has some of my (David John Coleman II) projects for week #2 at Holberton School.
-The focus of these projects have been learning Bash scripts and commands for unix shell and ubuntu 14.04.
+This Repo has some of my (David John Coleman II) projects for Holberton School.
+The focus of these projects have been learning Bash scripts and commands for ubuntu 14.04 on Linux
+
+## Primary Concepts Learned
+
+* ``/etc/profile`` and ``/etc/profile.d``
+* ``.bashrc``
+* difference between local and global variables
+* create update and delete shell variables
+* special parameters and command ``$?``
+* expansion, single and double quote differences, arithmetic operations
+* aliases, other help pages
+
+## Primary commands / functions used
+
+* ``printenve``, ``set``, ``unset``, ``export``
+* ``alias``, ``unalias``, ``source``
+* ``printf``, ``.``
 
 ## URL
 
