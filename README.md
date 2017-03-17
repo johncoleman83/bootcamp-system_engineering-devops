@@ -40,10 +40,6 @@ The focus of these projects have been learning Bash scripts and commands for ubu
   * expansion, single and double quote differences, arithmetic operations
   * aliases, other help pages
 
-## URL
-
-https://github.com/johncoleman83/holbertonschool-sysadmin_devops
-
 ## Author
 
 David John Coleman II.	Check out my website http://www.davidjohncoleman.com/
