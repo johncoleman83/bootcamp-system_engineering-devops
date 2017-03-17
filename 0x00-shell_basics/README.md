@@ -20,10 +20,6 @@ The focus of these projects have been learning Bash scripts and commands for ubu
 * ``cp``, ``mv``, ``rm``, ``mkdir``
 * ``type``, ``which``, ``help``, ``man``
 
-## URL
-
-https://github.com/johncoleman83/holbertonschool-sysadmin_devops/
-
 ## Author
 
 David John Coleman II.	Check out my website http://www.davidjohncoleman.com/

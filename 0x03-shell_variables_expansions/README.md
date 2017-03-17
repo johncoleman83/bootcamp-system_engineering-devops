@@ -21,10 +21,6 @@ The focus of these projects have been learning Bash scripts and commands for ubu
 * ``alias``, ``unalias``, ``source``
 * ``printf``, ``.``
 
-## URL
-
-https://github.com/johncoleman83/holbertonschool-sysadmin_devops/
-
 ## Author
 
 David John Coleman II.  Check out my website http://www.davidjohncoleman.com/

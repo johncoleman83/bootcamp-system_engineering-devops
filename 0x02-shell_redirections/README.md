@@ -19,10 +19,6 @@ remove sections of a file
 ## Primary commands / functions used
 * ``head``, ``tail``, ``find``, ``wc``, ``sort``, ``uniq``, ``grep``, ``tr``
 
-## URL
-
-https://github.com/johncoleman83/holbertonschool-sysadmin_devops
-
 ## Author
 
 David John Coleman II.	Check out my website http://www.davidjohncoleman.com/
