@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# This script is displaying bad luck numbers
+# This script displays brief time from a clock
 HOUR=0
 MIN=1
 while [ $HOUR -le 12 ]; do
