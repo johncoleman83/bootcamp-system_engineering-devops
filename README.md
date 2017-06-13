@@ -3,11 +3,17 @@
 ## Description
 
 This Repo has some of my (David John Coleman II) projects for Holberton School.
-The focus of these projects have been learning Bash scripts and commands for ubuntu 14.04 on Linux
+The focus of these projects have been learning Bash and other sysadmin/ devops
+technologies.
+
+* __Environment:__ Ubuntu 14.04 LTS
+* __Language:__ Bash
+* __Style:__ Shellcheck v. 0.3.3
 
 ## Directories
 
 * 0x00-shell_basics
+
   * what is the shell?
   * difference between shell and terminal?
   * types of directories, root user
@@ -15,6 +21,7 @@ The focus of these projects have been learning Bash scripts and commands for ubu
   * reading man pages
 
 * 0x01-shell_permissions
+
   * linux file permissions
   * represent three sets of permissions for owner, group and other
   * change permissions
@@ -22,6 +29,7 @@ The focus of these projects have been learning Bash scripts and commands for ubu
   * change user id, create user, creat group
 
 * 0x02-shell_redirections
+
   * redirect standard output to a file
   * get standard input from a file
   * send output from one program to input of another program
@@ -32,6 +40,7 @@ The focus of these projects have been learning Bash scripts and commands for ubu
   remove sections of a file
 
 * 0x03-shell_variables_expansions
+
   * ``/etc/profile`` and ``/etc/profile.d``
   * ``.bashrc``
   * difference between local and global variables
@@ -39,6 +48,15 @@ The focus of these projects have been learning Bash scripts and commands for ubu
   * special parameters and command ``$?``
   * expansion, single and double quote differences, arithmetic operations
   * aliases, other help pages
+
+* 0x04-loops_conditions_and_parsing
+
+  * How to create SSH keys
+  * What is the advantage of using #!/usr/bin/env bash over #!/bin/bash
+  * How to use while, until and for loops
+  * How to use if, else, elif and case condition statements
+  * How to use the cut command
+  * What are files and other comparison operators, and how to use them
 
 ## Author
 

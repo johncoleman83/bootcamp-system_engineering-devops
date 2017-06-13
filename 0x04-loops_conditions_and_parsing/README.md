@@ -1,4 +1,4 @@
-# Holberton School Projects Repository
+# 0x04-loops_conditions_and_parsing
 
 ## Description
 
@@ -12,15 +12,12 @@ technologies.
 
 ## Primary Concepts Learned
 
-*  linux file permissions
-* represent three sets of permissions for owner, group and other
-* change permissions
-* run commands as root with ``sudo``
-* change user id, create user, creat group
-
-## Primary commands / functions used
-
-* ``chmod``, ``sudo``, ``su``, ``chown``, ``chgrp``
+* How to create SSH keys
+* What is the advantage of using #!/usr/bin/env bash over #!/bin/bash
+* How to use while, until and for loops
+* How to use if, else, elif and case condition statements
+* How to use the cut command
+* What are files and other comparison operators, and how to use them
 
 ## Author
 

@@ -3,7 +3,12 @@
 ## Description
 
 This Repo has some of my (David John Coleman II) projects for Holberton School.
-The focus of these projects have been learning Bash scripts and commands for ubuntu 14.04 on Linux
+The focus of these projects have been learning Bash and other sysadmin/ devops
+technologies.
+
+* __Environment:__ Ubuntu 14.04 LTS
+* __Language:__ Bash
+* __Style:__ Shellcheck v. 0.3.3
 
 ## Primary Concepts Learned
 
@@ -23,8 +28,8 @@ The focus of these projects have been learning Bash scripts and commands for ubu
 
 ## Author
 
-David John Coleman II.  Check out my website http://www.davidjohncoleman.com/
+David John Coleman II, http://www.davidjohncoleman.com/
 
 ## License
 
-WTFPL License - http://www.wtfpl.net/
+Public Domain, no copyright protection
