@@ -1,1 +1,16 @@
 #!/usr/bin/env bash
+# This script is displaying bad luck numbers
+HOUR=0
+MIN=1
+while [ $HOUR -le 12 ]; do
+
+	echo "Hour: $HOUR"
+	(( MIN = 1 ))
+
+	while [ $MIN -le 59 ]; do
+		echo "$MIN"
+		(( MIN++))
+	done
+	(( HOUR++ ))
+
+done
