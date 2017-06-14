@@ -3,20 +3,20 @@
 storage="/var/run/holbertonscript.pid"
 mypid=$$
 sudo echo "$mypid" | sudo tee "$storage"
+_kat() {
+	sudo rm "$storage"
+	exit 0
+}
 _sterm() {
 	echo "I hate the kill command"
 }
 _sint() {
 	echo "Y U no love me?!"
 }
-_kat() {
-	sudo rm "$storage"
-	exit 0
-}
-trap _sterm SIGTERM
-trap _sint SIGINT
 trap _kat SIGQUIT
 trap _kat SIGTERM
+trap _sterm SIGTERM
+trap _sint SIGINT
 while (( 1 == 1 )); do
 	echo "To infinity and beyond"
 	sleep 2

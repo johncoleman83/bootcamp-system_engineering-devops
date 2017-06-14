@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # create an infinite loop and block the SIGTERM Signal
 _sterm() {
-  echo "I am invincible!!!"
+	echo "I am invincible!!!"
 }
 trap _sterm SIGTERM
 while (( 1 == 1 )); do
