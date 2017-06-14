@@ -1,1 +1,6 @@
 #!/usr/bin/env bash
+# create an infinite loop
+while (( 1 == 1 )); do
+	echo "To infinity and beyond"
+	sleep 2
+done

@@ -1,1 +1,4 @@
 #!/usr/bin/env bash
+# prints PID of current bash instance
+# shellcheck disable=SC2009
+ps axu | grep bash
