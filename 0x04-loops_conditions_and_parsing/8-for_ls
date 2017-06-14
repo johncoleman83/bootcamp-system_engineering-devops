@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # this displays directory contents in a list like `$ ls`
-for i in $(find ./* | cut -d'-' -f2- | tr -d './'); do
+for i in $(find ./* | cut -d'-' -f2 | tr -d './'); do
 	echo "$i"
 done
