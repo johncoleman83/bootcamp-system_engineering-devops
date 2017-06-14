@@ -8,7 +8,7 @@ while [ $i -le 20 ]; do
 	case $i in
 
 		4) echo "bad luck from China";;
-		9) echo "good luck from Japan";;
+		9) echo "bad luck from Japan";;
 		17) echo "bad luck from Italy";;
 
 	esac
