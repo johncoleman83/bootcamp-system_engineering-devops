@@ -1,1 +1,3 @@
 #!/usr/bin/env bash
+# sorts IP's from Apache Logs by # of occurrence with status code
+cat apache-access.log | awk -F' ' '{ print $1, $9 }' | sort | uniq -c | sort -nr | sed 's/    / /g'
