@@ -1,1 +1,5 @@
 #!/usr/bin/env bash
+# reads /usr/passwrd file and filters it's contents before printing
+while read p; do
+	echo "$p" | awk -F':' '{ print $1, $3, $6 }' | tr ' ' ':'
+done < /etc/passwd
