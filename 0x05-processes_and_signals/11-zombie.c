@@ -44,10 +44,7 @@ int main(void)
 		if (walker == ALIVE)
 			exit(ALIVE);
 	}
-
-	while (ZOMBIE == DEAD)
-		/* do nothing infinitely */
-		;
+	pause();
 
 	return (ALIVE);
 }
