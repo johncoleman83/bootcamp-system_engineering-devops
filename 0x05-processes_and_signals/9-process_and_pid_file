@@ -1,20 +1,21 @@
 #!/usr/bin/env bash
 # create an infinite loop with traps for SIGTERM & SIGINT
 storage="/var/run/holbertonscript.pid"
-mypid=$$
-sudo echo "$mypid" | sudo tee "$storage"
-_kat() {
+thispid=$$
+echo "$thispid" | cat > /var/run/holbertonscript.pid
+_squit() {
 	sudo rm "$storage"
-	exit 0
+	kill -9 "$thispid"
 }
 _sterm() {
 	echo "I hate the kill command"
+	sudo rm "$storage"
+	kill -9 "$thispid"
 }
 _sint() {
 	echo "Y U no love me?!"
 }
-trap _kat SIGQUIT
-trap _kat SIGTERM
+trap _squit SIGQUIT
 trap _sterm SIGTERM
 trap _sint SIGINT
 while (( 1 == 1 )); do
