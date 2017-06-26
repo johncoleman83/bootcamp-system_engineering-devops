@@ -17,7 +17,7 @@ pid_t walking_dead(void)
 
 	walker = fork();
 
-	if (walker != 0)
+	if (walker != ALIVE)
 	{
 		printf("Zombie process created, PID: %d\n", walker);
 		return (walker);
