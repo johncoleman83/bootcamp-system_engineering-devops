@@ -22,8 +22,8 @@ pid_t walking_dead(void)
 		printf("Zombie process created, PID: %d\n", walker);
 		return (walker);
 	}
-	else
-		return (ALIVE);
+
+	return (ALIVE);
 }
 
 /**
