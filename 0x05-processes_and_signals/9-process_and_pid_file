@@ -2,7 +2,7 @@
 # create an infinite loop with traps for SIGTERM & SIGINT
 storage="/var/run/holbertonscript.pid"
 thispid=$$
-echo "$thispid" | cat > /var/run/holbertonscript.pid
+echo "$thispid" > /var/run/holbertonscript.pid
 _squit() {
 	sudo rm "$storage"
 	kill -9 "$thispid"
