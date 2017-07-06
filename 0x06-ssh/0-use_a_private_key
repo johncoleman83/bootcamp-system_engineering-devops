@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# logs into a server with specified key auth file
+ssh -i ~/.ssh/holberton ubuntu@66.70.184.182
