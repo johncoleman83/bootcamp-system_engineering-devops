@@ -1,4 +1,4 @@
-# 0x07-networking_basics
+# 0x08-web_stack_debugging_0
 
 ## Description
 
@@ -9,17 +9,12 @@ technologies.
 * __Environment:__ Ubuntu 14.04 LTS
 * __Language:__ Bash
 * __Style:__ Shellcheck v. 0.3.3
+* __Technologies:__ Docker
 
 ## Primary Concepts Learned
 
-* OSI model
-* What is a LAN
-* What is a WAN
-* What is the Internet
-* IP address
-* TCP/UDP
-* TCP/UDP Ports
-* What tool/protocol is often used to check if a device is connected to network
+* Docker
+* Debugging
 
 ## Author
 
