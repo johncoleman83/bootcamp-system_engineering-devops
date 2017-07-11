@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# configures a new nginx server on ubuntu, create index.html, test it
+apt-get update
+apt-get -y install nginx
+service nginx start
+echo "Ceci n'est pas une page" > /usr/share/nginx/html/404.html
+sed -i '45 i \\terror_page 404 /404.html;' /etc/nginx/sites-available/default
+sudo service nginx restart
