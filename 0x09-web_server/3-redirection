@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# configures a new nginx server on ubuntu, create index.html, test it
+# configures a new nginx server on ubuntu with a redirect
 apt-get update
 apt-get -y install nginx
 service nginx start
