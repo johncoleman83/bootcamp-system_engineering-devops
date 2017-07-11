@@ -3,4 +3,3 @@
 apt-get -y install nginx
 mv /usr/share/nginx/html/index.html /usr/share/nginx/html/index.html.backup
 echo "Holberton School Rocks!" > /usr/share/nginx/html/index.html
-curl 0:80 | grep "Holberton School"
