@@ -3,5 +3,5 @@
 apt-get update
 apt-get -y install nginx
 service nginx start
-echo 'rewrite ^/redirect_me http://www.davidjohncoleman.com permanent;' >> /etc/nginx/sites-available/default
+sed -i '26 i \\trewrite ^/redirect_me http://www.davidjohncoleman.com permanent;' /etc/nginx/sites-available/default
 sudo service nginx restart
