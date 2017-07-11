@@ -3,5 +3,6 @@
 apt-get update
 apt-get -y install nginx
 service nginx start
+mv /usr/share/nginx/html/index.html /usr/share/nginx/html/index.html.backup
 echo "Holberton School Rocks!" > /usr/share/nginx/html/index.html
 service nginx restart
