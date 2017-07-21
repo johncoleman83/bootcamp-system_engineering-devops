@@ -6,7 +6,8 @@ This Repo has some of my (David John Coleman II) projects for Holberton School.
 The focus of these projects have been learning software network infrastruction,
 particularly related to web applications
 
-This repository contains diagram images only with references to the images
+This repository contains images of diagrams & files with references to those
+diagrams
 
 ## Primary Concepts Learned
 
