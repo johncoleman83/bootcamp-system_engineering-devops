@@ -1,4 +1,11 @@
 #!/usr/bin/env bash
 # script to modify the /etc/hosts file with new alias for IP addresses
-N=`grep -n '127.0.0.1 localhost' /etc/hosts | cut -b 1`
-sed -i "${N}s/.*/127.0.0.2\tlocalhost\n8.8.8.8\tfacebook.com/" /etc/hosts
+cat /etc/hosts > ~/hosts.new
+N=$(grep -n '127.0.0.1[[:space:]]localhost' ~/hosts.new | cut -b 1)
+if [[ "${N}" ]]; then
+    sed -i "${N}s/.*/127.0.0.2\tlocalhost\n8.8.8.8\tfacebook.com/" ~/hosts.new
+else
+    echo -e "127.0.0.2\tlocalhost\n8.8.8.8\tfacebook.com" >> ~/hosts.new
+fi
+cat ~/hosts.new > /etc/hosts
+rm ~/hosts.new
