@@ -1,11 +1,19 @@
 #!/usr/bin/env bash
 # script to modify the /etc/hosts file with new alias for IP addresses
 cat /etc/hosts > ~/hosts.new
-N=$(grep -n '127.0.0.1[[:space:]]localhost' ~/hosts.new | cut -b 1)
-if [[ "${N}" ]]; then
-    sed -i "${N}s/.*/127.0.0.2\tlocalhost\n8.8.8.8\tfacebook.com/" ~/hosts.new
-else
-    echo -e "127.0.0.2\tlocalhost\n8.8.8.8\tfacebook.com" >> ~/hosts.new
+N1=$(grep -n '127.0.0.1[[:space:]]localhost' ~/hosts.new | cut -d':' -f1)
+check1=$(grep -n '127.0.0.2[[:space:]]localhost' ~/hosts.new | cut -d':' -f1)
+N2=$(grep -n 'facebook.com' ~/hosts.new | cut -d':' -f1)
+check2=$(grep -n '8.8.8.8[[:space:]]facebook.com' ~/hosts.new | cut -d':' -f1)
+if [[ "${N1}" ]] && [[ -z "$check1" ]]; then
+    sed -i "${N1}s/.*/127.0.0.2\tlocalhost/" ~/hosts.new
+elif [[ -z "$check1" ]]; then
+    echo -e "127.0.0.2\tlocalhost" >> ~/hosts.new
+fi
+if [[ "${N2}" ]] && [[ -z "$check2" ]]; then
+    sed -i "${N2}s/.*/8.8.8.8\tfacebook.com/" ~/hosts.new
+elif [[ -z "$check2" ]]; then
+    echo -e "8.8.8.8\tfacebook.com" >> ~/hosts.new
 fi
 cat ~/hosts.new > /etc/hosts
 rm ~/hosts.new
