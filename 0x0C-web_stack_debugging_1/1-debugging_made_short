@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-# script to debug NGINX server in Docker Container,
-# then remove the nginx.pid file
+# debug NGINX server in Docker Container, then remove the nginx.pid file
 sed -i "21s/.*/\tlisten 80 default_server;/" /etc/nginx/sites-enabled/default
 sed -i "22s/.*/\tlisten [::]:80 default_server ipv6only=on;/" /etc/nginx/sites-enabled/default
 service nginx start
