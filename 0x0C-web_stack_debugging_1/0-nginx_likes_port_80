@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# script to debug NGINX server in Docker Container
+sed -i "21s/.*/\tlisten 80 default_server;/" /etc/nginx/sites-enabled/default
+service nginx start
