@@ -5,6 +5,19 @@
 This is simply a link to my blog post about what happens when you type
 holbertonschool.com in your browser and press enter
 
+__Blog Post:__ http://www.davidjohncoleman.com/2017/what-happens-when-you-type-httpswww-holbertonschool-com-in-your-browser-and-hit-enter
+
+## Topics
+
+* DNS request
+* TCP/IP
+* Firewall
+* HTTPS/SSL
+* Load-balancer
+* Web server
+* Application server
+* Database
+
 ## Author
 
 David John Coleman II, http://www.davidjohncoleman.com/
