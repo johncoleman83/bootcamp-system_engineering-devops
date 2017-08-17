@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-# configures nginx server w/ new header variable X-Served-By & value $HOSTNAME
-# shellcheck disable=SC2154
+# configures a server with HAProxy Load Balancer
 apt-get update
 apt-get -y install nginx
 sed -i "30 i \\\n\tadd_header X-Served-By $HOSTNAME;\n" \
