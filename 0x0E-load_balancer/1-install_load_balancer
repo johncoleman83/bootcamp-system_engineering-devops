@@ -1,7 +1,15 @@
 #!/usr/bin/env bash
 # configures a server with HAProxy Load Balancer
+add-apt-repository ppa:vbernat/haproxy-1.5
 apt-get update
-apt-get -y install nginx
-sed -i "30 i \\\n\tadd_header X-Served-By $HOSTNAME;\n" \
-    /etc/nginx/sites-available/default
-service nginx restart
+apt-get dist-upgrade
+apt-get install haproxy
+cp /etc/haproxy/haproxy.cfg /etc/haproxy/haproxy.cfg.backup
+sed -i "6 i \\\nENABLED=1\n" /etc/default/haproxy
+sed -i "\$a\
+listen backend *:80\n\
+\tmode http\n\tbalance roundrobin\n\
+\tserver 123-web-01 66.70.187.105:80 check\n\
+\tserver 123-web-02 142.44.164.125:80 check\n" \
+/etc/haproxy/haproxy.cfg
+sudo service haproxy start

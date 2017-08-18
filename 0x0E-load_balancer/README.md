@@ -11,7 +11,7 @@ Balancer: HAProxy
 * __Language:__ Bash
 * __Style:__ Shellcheck v. 0.3.3
 * __Web Server:__ nginx/1.4.6 (Ubuntu)
-* __Load Balancer:__ HAProxy
+* __Load Balancer:__ HA-Proxy version 1.5.19 2016/12/25
 * __Host:__ OVH, https://www.ovh.com/us/
 
 ## Assignment
