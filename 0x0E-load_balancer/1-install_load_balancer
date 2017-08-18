@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 # configures a server with HAProxy Load Balancer
-add-apt-repository ppa:vbernat/haproxy-1.5
+echo deb http://archive.ubuntu.com/ubuntu trusty-backports main universe | \
+      tee /etc/apt/sources.list.d/backports.list
 apt-get update
-apt-get dist-upgrade
-apt-get install haproxy
+apt-get install -y haproxy -t trusty-backports
 cp /etc/haproxy/haproxy.cfg /etc/haproxy/haproxy.cfg.backup
 sed -i "6 i \\\nENABLED=1\n" /etc/default/haproxy
 sed -i "\$a\
