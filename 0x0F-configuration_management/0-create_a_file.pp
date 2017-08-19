@@ -1,4 +1,4 @@
-# Puppet module to create a file
+# Puppet manifest to create a file
 file { '/tmp/holberton':
   ensure  	=> file,
   path		=> '/tmp/holberton',
