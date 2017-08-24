@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# script to check and verify IP's of various subdomains
+subs=( www lb-01 web-01 web-02 )
+if [[ -z "$2" ]]; then
+    for sub in "${subs[@]}"; do
+	record=$(dig "$sub.$1" | awk 'c&&!--c;/ANSWER SECTION:/{c=1}')
+	read -ra arr <<<"$record"
+	echo "The subdomain $sub is a ${arr[3]} record and points to ${arr[4]}"
+    done
+elif [[ ! -z "$2" ]]; then
+    record=$(dig "$2.$1" | awk 'c&&!--c;/ANSWER SECTION:/{c=1}')
+    read -ra arr <<<"$record"
+    echo "The subdomain $2 is a ${arr[3]} record and points to ${arr[4]}"
+fi
