@@ -24,4 +24,5 @@ David John Coleman II, http://www.davidjohncoleman.com/
 
 ## License
 
-Public Domain, no copyright protection
+MIT License
+

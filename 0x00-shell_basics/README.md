@@ -22,8 +22,8 @@ The focus of these projects have been learning Bash scripts and commands for ubu
 
 ## Author
 
-David John Coleman II.	Check out my website http://www.davidjohncoleman.com/
+David John Coleman II, http://www.davidjohncoleman.com/
 
 ## License
 
-Public Domain, no copyright protection
+MIT License
