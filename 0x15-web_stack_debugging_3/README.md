@@ -12,6 +12,13 @@ stack web infrastructure
 * __OS:__ Ubuntu 14.04 LTS
 * __Web Server:__ Apache
 * __Tools:__ Puppet
+* __Style:__ puppet-lint
+
+## Usage
+
+```
+$ puppet apply 0-strace_is_your_friend.pp
+```
 
 ## Author
 
