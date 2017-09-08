@@ -1,15 +1,17 @@
-# 0x12-firewall
+# 0x15-web_stack_debugging_3
 
 ## Description
 
 This Repo has some of my (David John Coleman II) projects for Holberton School.
-The focus of these projects have been learning Bash and other sysadmin/ devops
-technologies, including Firewalls.
+The focus of these project is using a puppet script to debug a WordPress LAMP
+stack web infrastructure
+
 
 ## Environment
 
 * __OS:__ Ubuntu 14.04 LTS
-* __Firewall:__ ufw
+* __Web Server:__ Apache
+* __Tools:__ Puppet
 
 ## Author
 

@@ -6,7 +6,9 @@ This Repo has some of my (David John Coleman II) projects for Holberton School.
 The focus of these projects have been learning Bash and other sysadmin/ devops
 technologies.  Configurations for Load Balancer HA Proxy (High Availability)
 
-* __Environment:__ Ubuntu 14.04 LTS
+## Environment
+
+* __OS:__ Ubuntu 14.04 LTS
 * __Load Balancer:__ HA-Proxy version 1.5.14
 
 ## Assignment
@@ -22,4 +24,3 @@ David John Coleman II, [davidjohncoleman.com](http://www.davidjohncoleman.com/)
 ## License
 
 MIT License
-

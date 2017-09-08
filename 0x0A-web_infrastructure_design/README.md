@@ -25,4 +25,3 @@ David John Coleman II, http://www.davidjohncoleman.com/
 ## License
 
 MIT License
-

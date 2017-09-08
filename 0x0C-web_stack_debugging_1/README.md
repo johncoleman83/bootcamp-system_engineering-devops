@@ -6,7 +6,9 @@ This Repo has some of my (David John Coleman II) projects for Holberton School.
 The focus of these projects have been learning Bash and other sysadmin/ devops
 technologies.
 
-* __Environment:__ Ubuntu 14.04 LTS
+## Environment
+
+* __OS:__ Ubuntu 14.04 LTS
 * __Language:__ Bash
 * __Style:__ Shellcheck v. 0.3.3
 
@@ -31,4 +33,3 @@ David John Coleman II, http://www.davidjohncoleman.com/
 ## License
 
 MIT License
-
