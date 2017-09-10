@@ -30,17 +30,23 @@ server {
 	# add header to response to specifiy server 01
 	add_header X-Served-By 123-web-01;
 
+
+	# rewrite request_uri for fix with odd_even response codes
+	if ($request_uri ~ ^/airbnb-dynamic/[\d+]) {
+	   rewrite ^/airbnb-dynamic/(.*) /airbnb-dynamic/number_odd_or_even/$1 break;
+	}
+
 	# main root of website
 	location / {
-		 # root /usr/share/nginx/html;
+		 root /usr/share/nginx/html;
 		 # First attempt to serve request as file, then
 		 # as directory, then fall back to displaying a 404.
-		 # try_files $uri $uri/ =404;
-		 include proxy_params;
-		 rewrite ^/(.*) /$1 break;
-		 proxy_pass http://127.0.0.1:8002;
-		 # include /etc/nginx/mime.types;
-		 # index index.html;
+		 try_files $uri $uri/ =404;
+		 # include proxy_params;
+		 # rewrite ^/(.*) /$1 break;
+		 # proxy_pass http://127.0.0.1:8002;
+		 include /etc/nginx/mime.types;
+		 index index.html;
 		 # Uncomment to enable naxsi on this location
 		 # include /etc/nginx/naxsi.rules
 	}
