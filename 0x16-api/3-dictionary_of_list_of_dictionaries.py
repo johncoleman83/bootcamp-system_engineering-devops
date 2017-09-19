@@ -25,10 +25,10 @@ def app():
     users = requests.get(u_url).json()
     for user in users:
         num = str(user.get('id'))
-        name = user.get('name')
+        username = user.get('username')
         todos = make_request('/todos/?userId=', num)
         all_tasks = [
-            {'username': name,
+            {'username': username,
              'task': t.get('title'),
              'completed': t.get('completed')}
             for t in todos

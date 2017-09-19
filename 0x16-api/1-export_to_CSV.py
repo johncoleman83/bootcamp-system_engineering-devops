@@ -23,7 +23,7 @@ def app(num):
     """
     employee = make_request('/users/', num)
     todos = make_request('/todos/?userId=', num)
-    name = employee.get('name')
+    username = employee.get('username')
     all_tasks = [[t.get('completed'), t.get('title')] for t in todos]
     filename = num + '.csv'
     with open(filename, 'w') as csvfile:
@@ -31,7 +31,7 @@ def app(num):
             csvfile, delimiter=',', quoting=csv.QUOTE_ALL
         )
         for task in all_tasks:
-            spamwriter.writerow([name, num, task[0], task[1]])
+            spamwriter.writerow([num, username, task[0], task[1]])
 
 
 if __name__ == '__main__':

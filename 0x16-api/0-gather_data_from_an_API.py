@@ -24,7 +24,7 @@ def app(num):
     todos = make_request('/todos/?userId=', num)
     completed = [t.get('title') for t in todos if t.get('completed')]
     total = len(todos)
-    print('Employee {} is done with tasks ({}/{}):'.format(
+    print('Employee {} is done with tasks({}/{}):'.format(
         employee.get('name'), len(completed), total))
     for t in completed:
         print('\t {}'.format(t))

@@ -22,9 +22,12 @@ def app(num):
     request for info about employee todo list, writes to .json file
     """
     employee = make_request('/users/', num)
+    username = employee.get('username')
     todos = make_request('/todos/?userId=', num)
     all_tasks = [
-        {'task': t.get('title'), 'completed': t.get('completed')}
+        {'task': t.get('title'),
+         'completed': t.get('completed'),
+         'username': username}
         for t in todos
     ]
     user_data = {num: all_tasks}
