@@ -18,7 +18,7 @@ def make_request(data, num):
 
 def app():
     """
-    returns info about employee todo list
+    makes request for info about employee todo list, then prints
     """
     num = str(sys.argv[1])
     employee = make_request('/users/', num)

@@ -18,7 +18,7 @@ def make_request(data, num):
 
 def app():
     """
-    returns info about employee todo list
+    writes all employee data to .json file
     """
     all_employee_data = {}
     u_url = 'https://jsonplaceholder.typicode.com/users/'

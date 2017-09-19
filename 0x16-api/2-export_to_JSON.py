@@ -19,7 +19,7 @@ def make_request(data, num):
 
 def app():
     """
-    returns info about employee todo list
+    request for info about employee todo list, writes to .json file
     """
     num = str(sys.argv[1])
     employee = make_request('/users/', num)
