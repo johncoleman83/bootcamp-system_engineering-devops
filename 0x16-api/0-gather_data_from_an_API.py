@@ -28,7 +28,7 @@ def app():
     print('Employee {} is done with tasks ({}/{}):'.format(
         employee.get('name'), len(completed), total))
     for t in completed:
-        print('     {}'.format(t))
+        print('\t {}'.format(t))
 
 
 if __name__ == '__main__':
