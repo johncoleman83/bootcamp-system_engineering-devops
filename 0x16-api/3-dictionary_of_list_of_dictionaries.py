@@ -12,7 +12,7 @@ def make_request(data, num):
     makes employee request and returns json dict response
     """
     root = 'https://jsonplaceholder.typicode.com'
-    url = root + data + num
+    url = '{}{}{}'.format(root, data, num)
     return requests.get(url).json()
 
 

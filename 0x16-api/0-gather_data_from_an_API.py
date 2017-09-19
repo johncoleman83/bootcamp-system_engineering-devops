@@ -12,15 +12,14 @@ def make_request(data, num):
     makes employee request and returns json dict response
     """
     root = 'https://jsonplaceholder.typicode.com'
-    url = root + data + num
+    url = '{}{}{}'.format(root, data, num)
     return requests.get(url).json()
 
 
-def app():
+def app(num):
     """
     makes request for info about employee todo list, then prints
     """
-    num = str(sys.argv[1])
     employee = make_request('/users/', num)
     todos = make_request('/todos/?userId=', num)
     completed = [t.get('title') for t in todos if t.get('completed')]
@@ -35,4 +34,5 @@ if __name__ == '__main__':
     """
     MAIN App
     """
-    app()
+    if len(sys.argv) > 1 and sys.argv[1].isdigit():
+        app(sys.argv[1])
