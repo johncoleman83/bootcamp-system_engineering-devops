@@ -3,8 +3,8 @@
 using https://jsonplaceholder.typicode.com/ REST API, for a given
 employee ID, returns information about his/her TODO list progress
 """
-import requests
 import json
+import requests
 
 
 def make_request(data, num):
