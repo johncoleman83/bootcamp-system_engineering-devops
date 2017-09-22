@@ -37,6 +37,7 @@ def count_words(subreddit, word_list, after=None):
     )
     code = response.status_code
     if code >= 300:
+        # print()
         return
     data = response.json().get('data')
     after = data.get('after')
@@ -48,14 +49,17 @@ def count_words(subreddit, word_list, after=None):
         for word in word_list:
             word[1] += title_words.count(word[0].lower())
     if after:
-        return count_words(subreddit, word_list, after)
+        count_words(subreddit, word_list, after)
     else:
         word_list = sorted(
             list(word_list),
             key=lambda x: x[1],
             reverse=True
         )
+        found = None
         for word in word_list:
             if word[1] > 0:
+                found = True
                 print('{}: {}'.format(word[0], word[1]))
-        return
+        if not found:
+            print()
