@@ -15,10 +15,13 @@ def recurse(subreddit, hot_list=[], after=None):
     if after:
         payload = {
             'after': after,
-            'count': str(len(hot_list))
+            'count': str(len(hot_list)),
+            'limit': str(100)
         }
     else:
-        payload = {}
+        payload = {
+            'limit': str(100)
+        }
     header = {
         'user-agent': 'one-dope-boy',
         'over18': 'yes'
@@ -35,8 +38,8 @@ def recurse(subreddit, hot_list=[], after=None):
     data = response.json().get('data')
     after = data.get('after')
     children = data.get('children')
-    for child in range(10):
-        hot_post = children[child].get('data')
+    for child in children:
+        hot_post = child.get('data')
         title = hot_post.get('title')
         hot_list.append(title)
     if after:
