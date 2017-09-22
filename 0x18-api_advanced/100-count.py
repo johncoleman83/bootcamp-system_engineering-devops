@@ -43,13 +43,9 @@ def print_results(word_list):
         key=lambda x: x[1],
         reverse=True
     )
-    found = None
     for word in word_list:
         if word[1] > 0:
-            found = True
             print('{}: {}'.format(word[0], word[1]))
-    if not found:
-        print()
 
 
 def search_for_words(children, word_list):
@@ -76,7 +72,6 @@ def count_words(subreddit, word_list, after=None):
     response = make_get_request(subreddit, after)
     code = response.status_code
     if code > 200:
-        # print()
         return
     data = response.json().get('data')
     after = data.get('after')
