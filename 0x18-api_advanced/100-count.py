@@ -10,9 +10,9 @@ def count_words(subreddit, word_list, after=None):
     returns the top ten hot posts for subreddit
     """
     if type(word_list).__name__ == 'list':
-        word_list = {
-            word: 0 for word in word_list
-        }
+        word_list = tuple(
+            [word, 0] for word in word_list
+        )
     domain = 'https://www.reddit.com'
     path = '/r/{}/hot.json'.format(subreddit)
     url = '{}{}'.format(domain, path)
@@ -45,14 +45,16 @@ def count_words(subreddit, word_list, after=None):
         hot_post = child.get('data')
         title = hot_post.get('title').split()
         for word in word_list:
-            word_list[word] += title.count(word)
+            word[1] += title.count(word[0])
     if after:
         return count_words(subreddit, word_list, after)
     else:
-        words_counts = [
-            (word, count) for word, count in word_list.items() if count > 0
-        ]
-        words_counts = sorted(words_counts, key=lambda x: x[1])
-        for word in words_counts:
-            print('{}: {}'.format(word[0], word[1]))
+        word_list = sorted(
+            list(word_list),
+            key=lambda x: x[1],
+            reverse=True
+        )
+        for word in word_list:
+            if word[1] > 0:
+                print('{}: {}'.format(word[0], word[1]))
         return
