@@ -34,20 +34,6 @@ def make_get_request(subreddit, after):
     return response
 
 
-def print_results(word_list):
-    """
-    prints result list
-    """
-    word_list = sorted(
-        list(word_list),
-        key=lambda x: x[1],
-        reverse=True
-    )
-    for word in word_list:
-        if word[1] > 0:
-            print('{}: {}'.format(word[0], word[1]))
-
-
 def search_for_words(children, word_list):
     """
     searches for words in response
@@ -57,8 +43,24 @@ def search_for_words(children, word_list):
         title = hot_post.get('title')
         title_words = [word.lower() for word in title.split()]
         for word in word_list:
-            word[1] += title_words.count(word[0].lower())
+            word_list[word] += title_words.count(word.lower())
     return word_list
+
+
+def print_results(word_list):
+    """
+    prints result list
+    """
+    word_list = [
+        [word, count] for word, count in word_list.items() if count > 0
+    ]
+    word_list = sorted(
+        word_list,
+        key=lambda x: x[1],
+        reverse=True
+    )
+    for word in word_list:
+        print('{}: {}'.format(word[0], word[1]))
 
 
 def count_words(subreddit, word_list, after=None):
@@ -66,9 +68,9 @@ def count_words(subreddit, word_list, after=None):
     prints the count of top ten hot posts for subreddit
     """
     if type(word_list).__name__ == 'list':
-        word_list = tuple(
-            [word, 0] for word in word_list
-        )
+        word_list = {
+            word: 0 for word in word_list
+        }
     response = make_get_request(subreddit, after)
     code = response.status_code
     if code > 200:
