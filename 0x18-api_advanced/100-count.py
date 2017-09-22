@@ -13,23 +13,12 @@ def make_get_request(subreddit, after):
     path = '/r/{}/hot.json'.format(subreddit)
     url = '{}{}'.format(domain, path)
     if after:
-        payload = {
-            'after': after,
-            'limit': str(100)
-        }
+        payload = {'after': after, 'limit': str(100)}
     else:
-        payload = {
-            'limit': str(100)
-        }
-    header = {
-        'user-agent': 'one-dope-boy',
-        'over18': 'yes'
-    }
+        payload = {'limit': str(100)}
+    header = {'user-agent': 'one-dope-boy', 'over18': 'yes'}
     response = requests.get(
-        url,
-        headers=header,
-        params=payload,
-        allow_redirects=False
+        url, headers=header, params=payload, allow_redirects=False
     )
     return response
 
@@ -43,7 +32,9 @@ def search_for_words(children, word_list):
         title = hot_post.get('title')
         title_words = [word.lower() for word in title.split()]
         for word in word_list:
-            word_list[word] += title_words.count(word.lower())
+            count = title_words.count(word.lower())
+            if count > 0:
+                word_list[word] += count
     return word_list
 
 
@@ -55,9 +46,7 @@ def print_results(word_list):
         [word, count] for word, count in word_list.items() if count > 0
     ]
     word_list = sorted(
-        word_list,
-        key=lambda x: x[1],
-        reverse=True
+        word_list, key=lambda x: x[1], reverse=True
     )
     for word in word_list:
         print('{}: {}'.format(word[0], word[1]))
