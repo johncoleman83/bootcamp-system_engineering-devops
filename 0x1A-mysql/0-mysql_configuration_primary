@@ -1,0 +1,14 @@
+[mysqld]
+pid-file	= /var/run/mysqld/mysqld.pid
+socket		= /var/run/mysqld/mysqld.sock
+datadir		= /var/lib/mysql
+log-error	= /var/log/mysql/error.log
+server-id	= 1
+log_bin		= /var/log/mysql/mysql-bin.log
+binlog_do_db	= hbnb_dev_db
+binlog_do_db	= hbnb_test_db
+binlog_do_db	= holberton
+# By default we only accept connections from localhost
+# bind-address	= 127.0.0.1
+# Disabling symbolic-links is recommended to prevent assorted security risks
+symbolic-links=0
