@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-# This script is displaying "Holberton School" 10 times, plus 'Hi' 1 time
+# This script is displaying "Bootcamp School" 10 times, plus 'Hi' 1 time
 i=0
 while [ $i -lt 10 ]; do
-	echo "Holberton School"
+	echo "Bootcamp School"
 	if (( i == 8 )); then
 		echo "Hi"
 	fi

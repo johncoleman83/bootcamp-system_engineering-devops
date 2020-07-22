@@ -1,7 +1,7 @@
 # Puppet manifest to create a file
-file { '/tmp/holberton':
+file { '/tmp/bootcamp':
   ensure  => file,
-  path    => '/tmp/holberton',
+  path    => '/tmp/bootcamp',
   mode    => '0774',
   owner   => 'www-data',
   group   => 'www-data',

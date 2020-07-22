@@ -2,7 +2,7 @@
 
 ## Description
 
-This Repo has some of my (David John Coleman II) projects for Holberton School.
+This Repo has some of my (David John Coleman II) projects for Bootcamp School.
 The focus of these project is Site Reliability Engineering working with MySQL.
 In Specific, this project creates a primary / replica Database Relationship
 with MySQL databases.

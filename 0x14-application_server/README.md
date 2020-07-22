@@ -2,7 +2,7 @@
 
 ## Description
 
-This Repo has some of my (David John Coleman II) projects for Holberton School.
+This Repo has some of my (David John Coleman II) projects for Bootcamp School.
 The focus of this project is to properly use and configure gunicorn.
 
 ## Environment

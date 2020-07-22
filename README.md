@@ -1,8 +1,8 @@
-# Holberton School Projects Repository
+# Bootcamp School Projects Repository
 
 ## Description
 
-This Repo has some of my (David John Coleman II) projects for Holberton School.
+This Repo has some of my (David John Coleman II) projects for Bootcamp School.
 The focus of these projects have been learning Bash and other sysadmin/ devops
 technologies.
 

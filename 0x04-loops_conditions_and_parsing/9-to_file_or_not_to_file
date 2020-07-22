@@ -1,16 +1,16 @@
 #!/usr/bin/env bash
 # checks if file exists and gives information about it
-fn="./holbertonschool"
+fn="./bootcampschool"
 if [ -e "$fn" ]; then
-	echo "holbertonschool file exists"
+	echo "bootcampschool file exists"
 	if [ -s "$fn" ]; then
-		echo "holbertonschool file is not empty"
+		echo "bootcampschool file is not empty"
 	else
-		echo "holbertonschool file is empty"
+		echo "bootcampschool file is empty"
 	fi
 	if [ -f "$fn" ]; then
-		echo "holbertonschool is a regular file"
+		echo "bootcampschool is a regular file"
 	fi
 else
-	echo "holbertonschool file does not exist"
+	echo "bootcampschool file does not exist"
 fi

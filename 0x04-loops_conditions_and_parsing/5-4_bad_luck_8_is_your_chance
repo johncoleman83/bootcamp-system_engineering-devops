@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# This script is displaying "Holberton School" 10 times, plus 'good luck'
+# This script is displaying "Bootcamp School" 10 times, plus 'good luck'
 # and 'bad luck'
 i=0
 while [ $i -lt 10 ]; do
@@ -9,7 +9,7 @@ while [ $i -lt 10 ]; do
 	elif (( i == 7 )); then
 		echo "good luck"
 	else
-		echo "Holberton School"
+		echo "Bootcamp School"
 	fi
 
 	(( i++ ))
