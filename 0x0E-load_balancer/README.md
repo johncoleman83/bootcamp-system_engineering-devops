@@ -2,7 +2,7 @@
 
 ## Description
 
-This Repo has some of my (David John Coleman II) projects for Bootcamp School.
+This Repo has some of my (David John Coleman II) projects for a software development program.
 The focus of these projects have been learning Bash and other sysadmin/ devops
 technologies.  The tasks are to initialize and begin working with a Load
 Balancer: HAProxy

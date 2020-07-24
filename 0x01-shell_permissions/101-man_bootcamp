@@ -5,7 +5,7 @@
 .SH SYNOPSIS
 bootcamp [STUDENTNAME]
 .SH DESCRIPTION
-Bootcamp School is a project-based alternative to college for the next generation of software engineers.
+a software development program is a project-based alternative to college for the next generation of software engineers.
 .SH OPTIONS
 .B bootcamp
 does not take any options. However, you can supply studentname.

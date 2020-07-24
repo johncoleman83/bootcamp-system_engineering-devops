@@ -1,8 +1,8 @@
-# Bootcamp School Projects Directory for 01x00
+# a software development program Projects Directory for 01x00
 
 ## Description
 
-This Repo has some of my (David John Coleman II) projects for Bootcamp School.
+This Repo has some of my (David John Coleman II) projects for a software development program.
 The focus of these projects have been learning Bash scripts and commands for ubuntu 14.04 on Linux
 
 ## Primary Concepts Learned

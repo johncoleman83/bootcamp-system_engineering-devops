@@ -2,7 +2,7 @@
 
 ## Description
 
-This Repo has some of my (David John Coleman II) projects for Bootcamp School.
+This Repo has some of my (David John Coleman II) projects for a software development program.
 The focus of these project is Site Reliability Engineering working with MySQL.
 This project configures sumo logic: https://www.sumologic.com/
 

@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-# This script is displaying "Bootcamp School" 10 times, plus 'Hi' 1 time
+# This script is displaying "a software development program" 10 times, plus 'Hi' 1 time
 i=0
 while [ $i -lt 10 ]; do
-	echo "Bootcamp School"
+	echo "a software development program"
 	if (( i == 8 )); then
 		echo "Hi"
 	fi

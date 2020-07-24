@@ -1,2 +1,2 @@
 #!/bin/bash
-chown -h betty:bootcamp _hello
+chown -h namesake:bootcamp _hello
